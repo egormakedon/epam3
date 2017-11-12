@@ -1,9 +1,9 @@
-package by.makedon.epam1.entity;
+package by.makedon.epam3.entity;
 
-import by.makedon.epam1.action.DotAction;
-import by.makedon.epam1.exception.WrongDataException;
-import by.makedon.epam1.validator.TriangleValidator;
-import by.makedon.epam1.validator.TriangleIndexValidator;
+import by.makedon.epam3.action.DotAction;
+import by.makedon.epam3.exception.WrongDataException;
+import by.makedon.epam3.validator.TriangleValidator;
+import by.makedon.epam3.validator.TriangleIndexValidator;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

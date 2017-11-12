@@ -1,5 +1,5 @@
-import by.makedon.epam1.action.DotAction;
-import by.makedon.epam1.entity.Dot;
+import by.makedon.epam3.action.DotAction;
+import by.makedon.epam3.entity.Dot;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;

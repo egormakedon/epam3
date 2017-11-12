@@ -1,9 +1,9 @@
-package by.makedon.epam1.reader;
+package by.makedon.epam3.reader;
 
-import by.makedon.epam1.entity.Dot;
-import by.makedon.epam1.exception.WrongDataException;
-import by.makedon.epam1.exception.IncorrectFileException;
-import by.makedon.epam1.parser.StringDataParser;
+import by.makedon.epam3.entity.Dot;
+import by.makedon.epam3.exception.WrongDataException;
+import by.makedon.epam3.exception.IncorrectFileException;
+import by.makedon.epam3.parser.StringDataParser;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

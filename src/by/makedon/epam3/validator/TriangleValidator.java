@@ -1,8 +1,8 @@
-package by.makedon.epam1.validator;
+package by.makedon.epam3.validator;
 
-import by.makedon.epam1.action.DotAction;
-import by.makedon.epam1.entity.Dot;
-import by.makedon.epam1.exception.WrongDataException;
+import by.makedon.epam3.action.DotAction;
+import by.makedon.epam3.entity.Dot;
+import by.makedon.epam3.exception.WrongDataException;
 
 public class TriangleValidator {
     public boolean dotsValidation(Dot dot1, Dot dot2, Dot dot3) throws WrongDataException {

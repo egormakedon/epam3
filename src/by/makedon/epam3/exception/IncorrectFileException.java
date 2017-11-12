@@ -1,4 +1,4 @@
-package by.makedon.epam1.exception;
+package by.makedon.epam3.exception;
 
 public class IncorrectFileException extends Exception {
     public IncorrectFileException() {}

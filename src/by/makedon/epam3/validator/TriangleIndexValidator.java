@@ -1,6 +1,6 @@
-package by.makedon.epam1.validator;
+package by.makedon.epam3.validator;
 
-import by.makedon.epam1.exception.WrongDataException;
+import by.makedon.epam3.exception.WrongDataException;
 
 public class TriangleIndexValidator {
     public boolean indexValidation(int index) throws WrongDataException {

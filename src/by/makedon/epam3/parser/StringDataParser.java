@@ -1,9 +1,9 @@
-package by.makedon.epam1.parser;
+package by.makedon.epam3.parser;
 
-import by.makedon.epam1.entity.Dot;
-import by.makedon.epam1.exception.WrongDataException;
-import by.makedon.epam1.validator.StringDataParserValidator;
-import by.makedon.epam1.validator.TriangleValidator;
+import by.makedon.epam3.entity.Dot;
+import by.makedon.epam3.exception.WrongDataException;
+import by.makedon.epam3.validator.StringDataParserValidator;
+import by.makedon.epam3.validator.TriangleValidator;
 
 public class StringDataParser {
     public boolean isParseString(String stringData, String delimiter) throws WrongDataException {

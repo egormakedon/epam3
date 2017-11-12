@@ -1,4 +1,4 @@
-package by.makedon.epam1.entity;
+package by.makedon.epam3.entity;
 
 public class Dot {
     private double x;

@@ -1,4 +1,4 @@
-package by.makedon.epam1.exception;
+package by.makedon.epam3.exception;
 
 public class WrongDataException extends Exception {
     public WrongDataException() {}

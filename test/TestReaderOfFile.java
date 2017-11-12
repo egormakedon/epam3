@@ -1,7 +1,7 @@
-import by.makedon.epam1.entity.Dot;
-import by.makedon.epam1.exception.WrongDataException;
-import by.makedon.epam1.exception.IncorrectFileException;
-import by.makedon.epam1.reader.ReaderOfFile;
+import by.makedon.epam3.entity.Dot;
+import by.makedon.epam3.exception.WrongDataException;
+import by.makedon.epam3.exception.IncorrectFileException;
+import by.makedon.epam3.reader.ReaderOfFile;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;

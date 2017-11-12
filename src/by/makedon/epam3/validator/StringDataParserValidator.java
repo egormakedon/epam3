@@ -1,4 +1,4 @@
-package by.makedon.epam1.validator;
+package by.makedon.epam3.validator;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

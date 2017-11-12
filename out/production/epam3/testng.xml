@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="TestDotAction" >
+        <classes>
+            <class name="TestDotAction" />
+        </classes>
+    </test>
+
+    <test name="TestTriangleAction">
+        <classes>
+            <class name="TestTriangleAction"/>
+        </classes>
+    </test>
+
+    <test name="TestTriangle">
+        <classes>
+            <class name="TestTriangle"/>
+        </classes>
+    </test>
+
+    <test name="TestTriangleValidator">
+        <classes>
+            <class name="TestTriangleValidator"/>
+        </classes>
+    </test>
+
+    <test name="TestReaderOfFile">
+        <classes>
+            <class name="TestReaderOfFile"/>
+        </classes>
+    </test>
+</suite>

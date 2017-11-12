@@ -1,6 +1,6 @@
-package by.makedon.epam1.action;
+package by.makedon.epam3.action;
 
-import by.makedon.epam1.entity.Dot;
+import by.makedon.epam3.entity.Dot;
 
 public class DotAction {
     public double calculateDistance(Dot dot1, Dot dot2) {
