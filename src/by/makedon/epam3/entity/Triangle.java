@@ -9,8 +9,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.Arrays;
+import java.util.Observable;
 
-public class Triangle {
+public class Triangle extends Observable {
     private Dot[] dots;
     private final int DOT_AMOUNT = 3;
     static Logger logger = LogManager.getLogger(Triangle.class);
@@ -52,6 +53,8 @@ public class Triangle {
                 dots[1] = dot2;
                 dots[2] = dot3;
                 logger.log(Level.INFO, this.toString() + " create successfully");
+                super.setChanged();
+                this.notifyObservers();
             }
         } catch (WrongDataException exception) {
             logger.log(Level.ERROR, exception.getMessage());
@@ -61,13 +64,31 @@ public class Triangle {
         TriangleValidator triangleValidator = new TriangleValidator();
         try {
             if(triangleValidator.dotsValidation(dots)) {
-                    this.dots[0] = dots[0];
-                    this.dots[1] = dots[1];
-                    this.dots[2] = dots[2];
-                    logger.log(Level.INFO, this.toString() + " create successfully");
+                this.dots[0] = dots[0];
+                this.dots[1] = dots[1];
+                this.dots[2] = dots[2];
+                logger.log(Level.INFO, this.toString() + " create successfully");
+                super.setChanged();
+                this.notifyObservers();
             }
         } catch (WrongDataException exception) {
             logger.log(Level.ERROR, exception.getMessage());
+        }
+    }
+
+    public void replaceDot(Dot newDot, int index) throws WrongDataException {
+        TriangleIndexValidator triangleIndexValidator = new TriangleIndexValidator();
+        if (triangleIndexValidator.indexValidation(index)) {
+            Dot currDot = dots[index];
+            dots[index] = newDot;
+            TriangleValidator triangleValidator = new TriangleValidator();
+            if (triangleValidator.dotsValidation(dots)) {
+                super.setChanged();
+                this.notifyObservers();
+            } else {
+                dots[index] = currDot;
+                throw new WrongDataException("Can't replace " + dots[index].toString() + " to " + newDot.toString() + " in " + this.toString());
+            }
         }
     }
 

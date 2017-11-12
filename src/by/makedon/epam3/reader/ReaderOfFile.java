@@ -51,13 +51,11 @@ public class ReaderOfFile {
             } finally {
                 if (scanner != null) scanner.close();
             }
-
             if (!fileDataList.isEmpty()) {
                 return fileDataList;
             } else {
                 throw new IncorrectFileException("filename hasn't correct data");
             }
-
         } else {
             throw new IncorrectFileException(filename + " hasn't found");
         }
