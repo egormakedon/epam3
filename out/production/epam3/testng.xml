@@ -30,4 +30,10 @@
             <class name="TestReaderOfFile"/>
         </classes>
     </test>
+
+    <test name="TestObserver">
+        <classes>
+            <class name="TestReaderOfFile"/>
+        </classes>
+    </test>
 </suite>
